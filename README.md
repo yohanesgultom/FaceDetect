@@ -1,15 +1,16 @@
-* Face Detection & Replacement *
+# Face Detection & Replacement
 
-Original face detection https://realpython.com/blog/python/face-recognition-with-python/
-Face replacement idea http://stackoverflow.com/questions/14063070/overlay-a-smaller-image-on-a-larger-image-python-opencv
-Original video-image conversion https://github.com/matthewfranglen/face-replace-python
+Original source/idea:
+* Face detection https://realpython.com/blog/python/face-recognition-with-python/
+* Face replacement http://stackoverflow.com/questions/14063070/overlay-a-smaller-image-on-a-larger-image-python-opencv
+* Video-image conversion https://github.com/matthewfranglen/face-replace-python
 
 Dependencies
 * Python 2 (>= 2.7)
 * OpenCV 2 (and OpenCV 3 for face detection)
 * FFMPEG (for video-image conversion)
 
-** Face detection **
+## Face detection
 
 Detect faces in single image. Usage:
 ```
@@ -20,7 +21,7 @@ Example:
 python face_detect.py abba.png haarcascade_frontalface_default.xml
 ```
 
-** Face Replacement **
+## Face Replacement
 
 Replace faces in single image. Usage:
 ```
