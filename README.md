@@ -12,7 +12,9 @@ Dependencies
 
 ## Face detection
 
-Detect faces in single image. Usage:
+### Detect faces in single image
+
+Usage:
 ```
 python face_detect.py [image] [xml config]
 ```
@@ -23,7 +25,9 @@ python face_detect.py abba.png haarcascade_frontalface_default.xml
 
 ## Face Replacement
 
-Replace faces in single image. Usage:
+### Replace faces in single image
+
+Usage:
 ```
 python face_replace.py [image] [replacement image] [xml config]
 ```
@@ -33,7 +37,10 @@ python face_replace.py abba.png replacement.png haarcascade_frontalface_default.
 ```
 The output file will be in `[image name].merged.[image ext]`
 
-Replace faces in multiple images in a directory. Usage:
+
+### Replace faces in multiple images in a directory
+
+Usage:
 ```
 python face_replace_multi.py [xml config] [replacement image] [input dir containing images] [output dir]
 ```
@@ -42,9 +49,11 @@ Example:
 python face_replace_multi.py haarcascade_frontalface_default.xml replacement.png video/frame/ video/merged/
 ```
 
-** Video-Image Conversion **
+## Video-Image Conversion
 
-Convert video to images (frames) + audio. Usage:
+### Convert video to images (frames) + audio
+
+Usage:
 ```
 bin/strip [video input] [images output dir] [audio ouput file path]
 ```
@@ -53,7 +62,9 @@ Example:
 bin/strip video.mp4 video/frame video/audio.aac
 ```
 
-Convert images + audio to video. Usage:
+### Convert images + audio to video
+
+Usage:
 ```
 bin/combine [images input dir] [audio input file path] [output video]
 ```
